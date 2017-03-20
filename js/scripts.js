@@ -1,8 +1,8 @@
-var add = function(number1, number2) {
-  return number1 + number2;
+var weight = parseInt(prompt("what do you weigh?"));
+var heightInches = parseInt(prompt("How many inches tall are you?"));
+
+var bmi = function( weight, heightInches) {
+ return ((weight/(heightInches*heightInches))*703);
 };
 
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-
-alert(add(number1, number2));
+alert(bmi(weight, heightInches));
